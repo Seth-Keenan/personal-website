@@ -1,0 +1,152 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to top, #265c1f, #a8e063);
+}
+
+body {
+    min-height: 100%;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles for the contact form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #797676;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #9e9c9c; 
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.about-me {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #797676;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me .profile-pic {
+    margin-left: auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-me .content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-me h1, .about-me h2 {
+    text-align: center;
+}
+
+.about-me p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-me ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-me ul li {
+    margin-bottom: 10px;
+}
